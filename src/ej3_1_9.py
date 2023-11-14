@@ -1,4 +1,4 @@
-def pedir_palabra(compara) -> tuple:
+def pedir_palabra() -> tuple:
     palabra = tuple(input("Dame una palabra : ").lower())
     palabra = palabra.replace()
     return palabra
