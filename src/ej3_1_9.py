@@ -8,6 +8,8 @@ def contador_vocales(palabra : tuple ) -> tuple :
     for vocal in vocales:
         vocal[1] = palabra.count(vocal[0])
     return vocales
+#hace lo mismo que lo de arriba solo que optimizado , cuenta las vocales de la palabra
+#el for es para ir cambiando y comprobando cada vocal en cada palabra y la guarda en una tupla.
 #return tuple ((vocal , palabra.count(vocal)) for vocal in ('a' , 'e' , 'i' , 'o' , 'u'))
 
 def mostrar(vocales):
@@ -25,6 +27,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-#mantenimiento , pruebas 
 
 
