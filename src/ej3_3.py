@@ -4,7 +4,7 @@ def asignaturas(asignatura):
         print (f"En la asignatura {asignatur} has sacado un {nota}")
 
 def main():
-    asignatura = (['Mates'] , ['Lengua'] , ['Física'] , ['Química'] , ['Filosofía'])
+    asignatura = ['Mates' , 'Lengua' , 'Física' , 'Química' , 'Filosofía']
     asignaturas(asignatura)
 
 if __name__ == "__main__":
