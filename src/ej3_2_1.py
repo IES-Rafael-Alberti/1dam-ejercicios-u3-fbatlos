@@ -3,7 +3,8 @@ def pedirdivisa(divisa):
     while dentro not in divisa : 
         print("**ERROR** Divisa no encontrada , prueba otra vez ")
         dentro = input("=> ")
-    print(divisa[dentro]) 
+    print("Su divisa es :",divisa[dentro]) 
+    
 def main():
     divisa = {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
     pedirdivisa(divisa)
