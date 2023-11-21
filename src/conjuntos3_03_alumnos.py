@@ -20,38 +20,37 @@ def conjunto_potencia(conjunto_original : set) -> list:
     :rtype: list
     """
     # TODO: Inicializar la lista potencia con el conjunto vacío:
-    ???
+    potencia = [set()]
 
     # TODO: Recorrer los elementos del conjunto original:
-    ???
-
+    for elemento in conjunto_original:
         # Explicación de qué vamos a hacer en el bucle:
         # Crear nuevos subconjuntos agregando el elemento actual a los subconjuntos 
         # existentes en la lista potencia mediante la operación de unión entre el 
         # elemento del conjunto original y cada subconjunto de la lista potencia.
 
         # TODO: Primero creamos una lista vacía que se llame nuevos_subconjuntos:
-        ???
+        nuevos_subconjuntos = []
         # TODO: Ahora recorremos los subconjuntos de la lista potencia:
-        ???
-            # 5. Por cada iteración, agregamos a la lista nuevos_subconjuntos
+        for subconjunto in potencia:
+            # todo. Por cada iteración, agregamos a la lista nuevos_subconjuntos
             # la unión del subconjunto y el elemento 
             # (que debemos introducirlo en un conjunto para la operación unión):
-            ???
+            nuevos_subconjuntos.append(subconjunto|{elemento})
         
         # TODO: Agregar los nuevos subconjuntos a la lista potencia:
-        ???
+        potencia.extend(nuevos_subconjuntos)#extend actualiza la lista
 
     # TODO: Retornar la lista creada con la lista de todos los subconjuntos
-    ???
+    return potencia
 
 
 def main():
     conjunto_original = {6, 1, 4}
     # TODO: Realiza la llamada a la función conjunto_potencia:
-    conjunto_potencia(conjunto_original)
+    tu_veras=conjunto_potencia(conjunto_original)
     # TODO: Muestra la lista resultante del conjunto potencia en consola:
-    ???
+    print(tu_veras)
 
 
 if __name__ == "__main__":
