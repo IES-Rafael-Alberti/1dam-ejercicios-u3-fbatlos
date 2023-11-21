@@ -10,7 +10,6 @@ def domicilios_clientes(lista_compras):
 def main():
     lista_compras = [()]
     dimicilios = domicilios_clientes(lista_compras)
-
     
     
 if __name__ == "__main__":
