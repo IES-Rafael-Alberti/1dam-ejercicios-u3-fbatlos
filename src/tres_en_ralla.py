@@ -88,6 +88,12 @@ def colocar_ficha(tablero : tuple , jugador : int):
 def verificar_ganador(tablero) -> tuple :
     """:param tablero: matriz de 3x3 
     :return tupla"""
+    #verificar filas y columnas
+    for i in range (3):
+        if tablero[i][0] == tablero [i][1] == tablero[i][2] != 0:
+            return tablero[i][0], True
+        if tablero[0][i] == tablero [1][i] == tablero[2][i] != 0:
+            return tablero[0][i], True
 
 def jugar(tablero : tuple):
     turno = 0
